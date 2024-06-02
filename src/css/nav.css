@@ -1,0 +1,43 @@
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.446);
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 90vw;
+    margin: 10px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+/* Move nav li to right side */
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 1rem;
+    
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}

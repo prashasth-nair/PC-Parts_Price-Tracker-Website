@@ -1,0 +1,114 @@
+body {
+  color: white;
+  overflow-x: hidden;
+  margin: 0;
+    padding: 0;
+    
+}
+.main{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #0e0023, #0f0126);
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  top:100px;
+  position: relative;
+
+  flex-direction: column;
+}
+.Discription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0), #0e0023),
+  url("https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg")
+    no-repeat center center/cover;
+}
+.Discription p {
+  font-size: 20px;
+  text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    padding: 50px;
+}
+.big_searchbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  position: relative;
+  background: linear-gradient(180deg, #0b0c0f, #0f0126);
+}
+.big_searchbar input {
+  width: 70%;
+  height: 30px;
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  outline: none;
+}
+.big_searchbar button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+  top: 100px;
+  background: #0e0023;
+}
+.category {
+  flex: 1 0 calc(20.5714% - 20px);
+  background-color: transparent;
+  box-shadow: 0 5px 10px rgba(157, 2, 2, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 200px;
+  margin: 20px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.category img {
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.category button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.category:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
