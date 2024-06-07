@@ -1,6 +1,6 @@
 const content = document.querySelector('.content');
 
-let url = 'https://pc-parts-price-tracker-api.onrender.com/categories';
+let url = 'http://localhost:8080/categories';
 
 
 document.addEventListener('DOMContentLoaded', () => {
