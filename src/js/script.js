@@ -38,3 +38,20 @@ if (content) {
         }
     });
 }
+
+// Search Box Functionality
+const search = document.getElementById('search-box');
+const searchBtn = document.getElementById('search_btn');
+
+searchBtn.addEventListener('click', () => {
+    let searchValue = search.value;
+    // console.log(searchValue);
+    // space is replaced with + and remove more than one spaces and remove the last space if it exists
+
+    searchValue = searchValue.trim();
+    searchValue = searchValue.replace(/\s+/g, '+');
+
+    let searchUrl = `/src/html/search.html?q=${searchValue}`;
+    window.location.href = searchUrl;
+    // window.location.href = `products.html?search=${searchValue}`;
+});

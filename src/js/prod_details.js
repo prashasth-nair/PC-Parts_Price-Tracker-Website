@@ -5,6 +5,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const category = urlParams.get("category");
 const id = urlParams.get("id");
+var loader = document.querySelector(".loader");
 console.log(category);
 
 let content = document.querySelector(".content");
@@ -12,16 +13,9 @@ let url = `http://localhost:8080/product/${category}/${id}`;
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM loaded");
+  loader.style.display = "block";
   fetchData();
 });
-// Function to display the product information
-function displayProductInfo(productInfo) {
-  let data = [];
-  let title;
-  let value;
-
-  return data;
-}
 
 const fetchData = () => {
   fetch(url)
@@ -108,7 +102,9 @@ const fetchData = () => {
         }
       });
       content.innerHTML = html;
-    });
-
+    }).finally(() => {
+  loader.style.display = "none";
+}
+);
 };
 

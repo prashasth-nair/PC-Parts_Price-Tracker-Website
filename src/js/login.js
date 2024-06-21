@@ -1,10 +1,3 @@
-if(sessionStorage.getItem("is_logged_in") === "true") {
-let is_logged_in = sessionStorage.getItem("is_logged_in");
-console.log(is_logged_in);
-}
-else {
-    window.location.href = "/src/html/login.html";
-}
 document
   .getElementById("loginForm")
   .addEventListener("submit", async (event) => {

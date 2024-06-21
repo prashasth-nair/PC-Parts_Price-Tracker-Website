@@ -1,60 +1,83 @@
-body{
-    background-color: #0f0126;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #0f0126;
+  margin: 0;
+  padding: 0;
 }
-.main{
-    top: 100px;
-    position: relative;
+.main {
+  top: 100px;
+  position: relative;
 }
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  background-color: #150035;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 20px rgba(88, 1, 1, 0.582);
 }
-.product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    
-    width: 300px;
-    height: 400px;
-    padding: 10px;
-    background-color: #150035;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 10px 5px 20px rgba(88, 1, 1, 0.582)
+
+.loader {
+  position: absolute;
+  top: 40vh;
+  left: 45vw;
+  z-index: 1000;
+  width: 80px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side, #fff 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 100%;
+  animation: l7 1.5s infinite linear;
 }
-.product img{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+@keyframes l7 {
+  33% {
+    background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
+  }
+  50% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
+  }
+  66% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
+  }
 }
-.product h2{
-    font-size: 20px;
-    color: white;
-    margin: 10px;
+.product img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
-.product p{
-    font-size: 18px;
-    color: white;
-    margin: 10px;
+.product h2 {
+  font-size: 20px;
+  color: white;
+  margin: 10px;
 }
-.product button{
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background-color: #ff4d4d;
-    color: white;
-    cursor: pointer;
+.product p {
+  font-size: 18px;
+  color: white;
+  margin: 10px;
+}
+.product button {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
 }
